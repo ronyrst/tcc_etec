@@ -1,0 +1,5 @@
+É necessário ter um arquivo chromedriver na pasta do bot.////
+
+Estou usando o chromedriver 98 para linux, que é a minha versão do chrome. A versão da etec provavelmente é diferente. Atentar a isso.////
+
+
