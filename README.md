@@ -1,1 +1,2 @@
-# tcc_etec
+# TCC
+Aqui vamos colocar nosso objetivo do tcc
