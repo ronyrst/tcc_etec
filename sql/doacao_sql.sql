@@ -17,10 +17,6 @@ pedido_familia
 
 https://www.w3schools.com/sql/sql_datatypes.asp
 https://www.w3schools.com/sql/sql_constraints.asp
-https://www.youtube.com/watch?v=mwJmupaIlF8
-https://www.youtube.com/watch?v=Qh1vLWRiOzc
-https://www.youtube.com/watch?v=6oKl6mZXPIU
-https://www.youtube.com/watch?v=b-BRlpso4GE
 
 
 =====================================================================
