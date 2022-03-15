@@ -34,36 +34,47 @@ def index():
 @app.route("/fale_conosco")
 @app.route("/fale_conosco/")
 def fale_conosco():
+    # Aqui espera-se receber um formulário com nome, número de telefone, email e a mensagem
     return render_template('fale_conosco.html')
 
 
 @app.route("/login")
 @app.route("/login/")
 def logando():
+    # recebe um cnpj e a senha hasheada
     return render_template('login.html')
 
 
 @app.route("/cadastro")
 @app.route("/cadastro/")
 def xama():
+    # Vai receber: cnpj, senha (já convertida pra hash no javascript), nome, CEP e Estado
     return render_template('cadastro.html')
 
 
 @app.route("/area_hospital")
 @app.route("/area_hospital/")
 def xama():
+
+    # vai receber um checkbox dos diferentes pedidos de sangue, além da data
+    # precisa também do cnpj
+    # atentar que para cada item do checkbox, será adicionada uma linha à guia de pedidos
+
     return render_template('area_hospital.html')
 
 
+""" Não será usada
 @app.route("/area_doador")
 @app.route("/area_doador/")
 def xama():
     return render_template('area_doador.html')
-
+"""
 
 @app.route("/backdoor")
 @app.route("/backdoor/")
 def xama():
+    # Tem que enviar as tabelas
+    # Receber alterações e exclusões
     return render_template('backdoor.html')
 
 

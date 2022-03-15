@@ -18,7 +18,7 @@ cpf, nome, idade, tipo sanguineo, numero telefone, data ultima doação
 */
 CREATE TABLE Doador (
     cpf CHAR(11),
-    senha VARCHAR(255) NOT NULL,
+    /* senha VARCHAR(255) NOT NULL, POR ENQUANTO NÃO SERÁ USADO */
     nome VARCHAR(255) NOT NULL,
     sobrenome VARCHAR(255) NOT NULL,
     data_nascimento DATE NOT NULL,
@@ -117,3 +117,8 @@ CREATE TABLE Pedido_mudanca_centro_doacao (
     PRIMARY KEY (pedido),
     FOREIGN KEY (cnpj) REFERENCES Centro_doacao(cnpj)
 );
+
+/*
+ Implementar tabela de mensagem enviada no fale_conosco
+    Nome, número, email e mensagem
+*/
