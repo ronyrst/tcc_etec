@@ -21,7 +21,7 @@ sdist/
 var/
 wheels/
 pip-wheel-metadata/
-share/python-wheels/
+share/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#conteudo relacionado ao chrome driver
+chromedriver
+*.exe
