@@ -4,18 +4,21 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 .menuhorizontal {
     border: 1px solid rgba(0, 0, 0, 0.4);
-box-sizing: border-box;
-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
     list-style-type: none;
     padding: 15px;
     background-color: #F38B6E;
     text-align: center;
 }
+
 .menuhorizontal li{
         display: inline;
 }
+
 .menuhorizontal li a {
     color: #fff;
     text-decoration: none;
@@ -24,6 +27,7 @@ box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
     transition: background .4s;
     font-size: 20px;
 }
+
 .menuhorizontal  a:hover {
     position: relative;
     border-bottom: 1px solid #fff;
@@ -37,6 +41,7 @@ right: 74.09%;
 top: 0%;
 bottom: 85.7%;
 }
+
 .img {
     
     height: 80px;
@@ -45,6 +50,7 @@ bottom: 85.7%;
     border-bottom-right-radius: 25px;
     background-size: 100px;
 }
+
 .img2 {
     height: 550px;
     width: 100%;
@@ -53,106 +59,104 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 left: calc(50% - 1468px/2);
 top: -800px;
 }
+
 .conteudo {
     text-align: center;
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 200px;
-letter-spacing: 0.2px;
-
-color: rgba(243, 139, 110, 0.9);
-
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 200px;
+    letter-spacing: 0.2px;
+    color: rgba(243, 139, 110, 0.9);
 }
+
+
 .caixas {
-
-align-items: center;
-padding: 30px 50px;
-width: 326px;
-height: 84px;
-left: calc(50% - 326px/2);
-top: 0px;
-background: #2A7CC7;
-border-top-left-radius: 25px;
-border-top-right-radius: 25px;
+    align-items: center;
+    padding: 30px 50px;
+    width: 326px;
+    height: 84px;
+    left: calc(50% - 326px/2);
+    top: 0px;
+    background: #2A7CC7;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
+
 .caixa {
-
-padding: 30px 50px;
-position: static;
-width: 327px;
-height: 218px;
-top: 84px;
-background: #F4F4F4;
-border: 1px solid #A9D6FF;
-box-sizing: border-box;
-border-radius: 0px 0px 11px 11px;
+    padding: 30px 50px;
+    position: static;
+    width: 327px;
+    height: 218px;
+    top: 84px;
+    background: #F4F4F4;
+    border: 1px solid #A9D6FF;
+    box-sizing: border-box;
+    border-radius: 0px 0px 11px 11px;
 }
-
 
 .caixas2 {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 30px 50px;
-width: 326px;
-height: 84px;
-top: 0px;
-border-top-left-radius: 25px;
-border-top-right-radius: 25px;
-background: #2A7CC7;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 50px;
+    width: 326px;
+    height: 84px;
+    top: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: #2A7CC7;
 }
-.caixa2 {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 30px 50px;
-position: static;
-width: 327px;
-height: 218px;
-left: calc(50% - 327px/2);
-top: 82px;
-background: #F4F4F4;
-border: 1px solid #A9D6FF;
-box-sizing: border-box;
-border-radius: 0px 0px 11px 11px;
 
+.caixa2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 50px;
+    position: static;
+    width: 327px;
+    height: 218px;
+    left: calc(50% - 327px/2);
+    top: 82px;
+    background: #F4F4F4;
+    border: 1px solid #A9D6FF;
+    box-sizing: border-box;
+    border-radius: 0px 0px 11px 11px;
 }
 
 .tudo {
     float: left;
-
 }
+
 .tudo2 {
     float: right;
 }
+
 .texto {
     color: #FFFFFF;
     font-size: 20px;
 }
+
 .texto3 {
     color: #FFFFFF;
     font-size: 20px;
 }
+
 .onde {
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 20px 50px;
-
-
-width: 250px;
-height: 64px;
-left: 595px;
-
-
-background: #2A7CC7;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    width: 250px;
+    height: 64px;
+    left: 595px;
+    background: #2A7CC7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
 }
+
 .onde a{
     text-decoration: none;
     color: #F4F4F4;
