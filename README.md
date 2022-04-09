@@ -6,3 +6,4 @@
 ## Referências
 http://www.prosangue.sp.gov.br/artigos/quem_nao_pode_doar.html      
 https://www.inca.gov.br/perguntas-frequentes/o-que-e-preciso-para-doar-sangue
+https://nicepage.com/download-windows#
