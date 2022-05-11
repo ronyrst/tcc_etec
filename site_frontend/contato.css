@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.menuvertical {
+    background-color: #F38B6E;
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+}
+.menuvertical li a {
+    color: #fff;
+    padding: 20px;
+    transition: background .4s;
+    font-size: 20px;
+}
+.menuvertical li {
+    margin: 30px;
+}
+.logo{
+    position: relative;
+left: 13.54%;
+right: 74.09%;
+top: 0%;
+bottom: 85.7%;
+}
+.img {  
+    height: 100px;
+    width: 200px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.sair {
+    position: relative;
+    top: 100px;
+}
+.menuvertical ul {
+    position:relative;
+    top: 80px;
+}
+.banner1{
+    position: absolute;
+     height:100%;
+   width: 80%;
+ }
+.img2 {
+    position: relative;
+    left: 25%;
+    width: 100%;
+    height:100%;
+}
+.ion-icon {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    margin-right: 8%;
+}
+.caixa{
+    position: absolute;
+    width: 35%;
+    height: 530px;
+    left: 570px;
+    top: 8%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    text-align: center;
+    padding: 60px;
+}
+.input-field {
+    position: relative;
+    
+}
+.input-field input {
+    position: relative;
+    top: -40px;
+    outline: none;
+    font-size: 0.9rem;
+    width: 250px;
+    padding: 5px;
+    border-color: #DCDCDC;
+    border-radius: 15px;
+    
+}
+.input-field input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+.input-field {
+    margin-bottom: 1rem;
+}
+#mensagem {
+    text-align: center;
+    height: 150px;
+}
+.botao1 {
+    position: relative;
+    top: 20px;
+    margin-top: 3rem;
+    background-color: #2A7CC7;
+    color: white;
+    width: 214px;
+    height: 64px;
+    padding: 3px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.caixa li{
+    display: inline;
+    margin: 8%;
+    padding:rem;
+    position: relative;
+    top: -90px;
+}
+.caixa h2{
+    position: relative;
+    top: -50px;
+    color: #F38B6E;
+}
+.img3{
+    width: 100%;
+    position:relative;
+    top: -50px;
+}
