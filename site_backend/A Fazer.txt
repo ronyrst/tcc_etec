@@ -1,3 +1,0 @@
-Arrumar o ambiente virtual
-
-Pra usar no windows. Baixar o programa Anaconda.
