@@ -1,0 +1,60 @@
+/*
+As cores de fonte são para o texto da página.
+- "especiais" seriam textos de título, negrito etc
+- "padrao" é a fonte para um fundo claro
+- "inverso" é para regiões mais escuras da página, que a cor escura fique pouco legível
+*/
+.cor_fonte_especiais{
+    color: #b48c4d;
+}
+
+.cor_fonte_padrao{
+    color: #120e07;
+}
+
+.cor_fonte_inverso{
+    color: #f7f3ed;
+}
+
+/*
+Cores da temática central.
+*/
+
+.vermelho_sangue{
+    color: #d92124;
+}
+
+.vermelho_sangue_sombra{
+    color: #d1061c;
+}
+
+/*
+Cor pro header e footer, e o que mais decidirem.
+- um exemplo de uso: https://www.bp.org.br/
+*/
+
+.cor_base_principal{
+    color: #4b12b5;
+}
+
+.cor_base_sombra{
+    color: #35078c;
+}
+
+/*
+Cores para alternar a cor de fundo, para não cansar tanto a vista do usuário.
+- exemplo (mas exagerado, é bom estar mais sutil que o apresentado aqui): https://www.bancodesanguepaulista.com.br/
+*/
+
+.cor_fundo_padrao{
+    color: #ffffff;
+}
+
+.cor_fundo_alternada{
+    color: #ededed;
+}
+.cor_indefinida{
+    color: #F38B6E;
+    color: #0455BF;
+    
+}
