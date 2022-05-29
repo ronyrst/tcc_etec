@@ -12,6 +12,7 @@
     position: absolute;
     width: 22%;
     height: 100%;
+
 }
 .menuvertical li a {
     color: #fff;
@@ -43,17 +44,6 @@ bottom: 85.7%;
     position:relative;
     top: 80px;
 }
-.banner1{
-    position: absolute;
-     height:100%;
-   width: 80%;
- }
-.img2 {
-    position: absolute;
-    left: 25%;
-    width: 100%;
-    height: 100%;
-}
 .ion-icon {
     font-size: 20px;
     position: relative;
@@ -62,14 +52,9 @@ bottom: 85.7%;
 }
 .caixa{
     position: absolute;
-    width: 35%;
-    height: 530px;
-    left: 570px;
-    top: 8%;
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
+    width: 75%;
+    height: 100%;
+    left: 320px;
     text-align: center;
     padding: 60px;
 }
@@ -79,15 +64,27 @@ bottom: 85.7%;
 }
 .input-field input {
     position: relative;
-    top: -40px;
     outline: none;
     font-size: 0.9rem;
-    width: 250px;
+    width: 300px;
+    top: 15px;
     padding: 5px;
     border-color: #DCDCDC;
     border-radius: 15px;
     
 }
+.input-field select {
+    position: relative;
+    outline: none;
+    top: 15px;
+    font-size: 0.9rem;
+    width: 300px;
+    padding: 5px;
+    border-color: #DCDCDC;
+    border-radius: 15px;
+    
+}
+
 .input-field input::placeholder{
     color: rgba(0, 0, 0, 0.5);
 }
@@ -98,38 +95,30 @@ bottom: 85.7%;
     text-align: center;
     height: 150px;
 }
+body{
+    background-color:#DCDCDC;
+}
 .botao1 {
     position: relative;
-    top: 20px;
+    top: -20px;
     margin-top: 3rem;
     background-color: #2A7CC7;
     color: white;
-    width: 214px;
-    height: 64px;
+    width: 190px;
+    height: 55px;
     padding: 3px;
     border: none;
     border-radius: 50px;
     font-size: 20px;
 }
-.caixa li{
-    display: inline;
-    margin: 8%;
-    padding:rem;
-    position: relative;
-    top: -90px;
-}
 .caixa h2{
     position: relative;
     top: -50px;
+    font-size: 35px;
     color: #F38B6E;
-}
-.img3{
-    width: 100%;
-    position:relative;
-    top: -50px;
 }
 .form2 {
     position: relative;
     height: 100%;
-    top: -15px;
+    top: -55px;
 }
