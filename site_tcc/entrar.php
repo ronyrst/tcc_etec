@@ -14,11 +14,11 @@
     <div class="fixado">
 <div class="menuhorizontal">
     <div class="logo">
-        <img src="images\logo2.png" class="img">
+        <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
     </div> 
     <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="entrar.html">Entrar / Registrar</a></li>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="entrar.php">Entrar / Registrar</a></li>
 
     </ul>
 </div>
@@ -43,7 +43,7 @@
             <span>Renember Password</span>
         </div>
         <div class="entrarBtn">
-        <button type="submit"><a href="area_hospital.html">Entrar</a></button>
+        <button type="submit"><a href="area_hospital.php">Entrar</a></button>
     </div>
        </form>
    
