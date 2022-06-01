@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="entrar.css">
+    <link rel="stylesheet" href="css_js/entrar.css">
     <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
   
     <title>Leve Sangue - Entrar</title>
@@ -35,7 +35,7 @@
         </div>
 
         <!-- form de login -->
-        <form id="signin" method="POST" action="cadastro.php">
+        <form id="signin" method="POST" action="login.php">
             <!-- email -->
             <input type="text" placeholder="Email" name="login" id="login" required>
             <i class="fas fa-envelope iEmail"></i>
@@ -47,19 +47,30 @@
                 <span>Lembrar a senha</span>
             </div>
             <div class="entrarBtn">
-                <button type="submit"><a href="area_hospital.php">Entrar</a></button>
+                <button type="submit" value="entrar" id="entrar" name="entrar">Entrar</button>
             </div>
         </form>
-   
+
+        <!-- ############################################################# -->
+        <!-- ############################################################# -->
+        <!-- #######################  T O   D O  ######################### -->
+        <!-- ############################################################# -->
+        <!-- ############################################################# -->
+        <!-- form de cadastro -->
         <form id="signup">
+            <!-- nome -->
             <input type="text" placeholder="Nome" required>
             <i class="fas fa-solid fa-user iUser"></i>
+            <!-- email -->
             <input type="text" placeholder="Email" required>
             <i class="fas fa-envelope iEmail"></i>
+            <!-- senha -->
             <input type="password" placeholder="Senha" required>
             <i class="fas fa-lock iPassword2"></i>
+            <!-- cnpj -->
             <input type="text" placeholder="CNPJ" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" required>
             <i class="fas fa-solid fa-id-card iCNPJ"></i>
+            <!-- cep -->
             <input type="text" placeholder="CEP" required>
             <i class="fas fa-solid fa-location-arrow iCEP"></i>
             <div class="divCheck">
@@ -70,7 +81,7 @@
         </form>
         </div>
    
-<script src="texte.2.js"></script>
+<script src="css_js/texte.2.js"></script>
 <div class="rodape">
     <div class="textos_rodape">
         <ul>
