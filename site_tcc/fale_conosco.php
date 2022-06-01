@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="fale_conosco.html"><ion-icon class="ion-icon" name="chatbubble-ellipses-outline"></ion-icon>Contate-nos</a></li>
                 <li><a href="notificar.html"><ion-icon class="ion-icon" name="notifications-outline"></ion-icon>Notificar</a></li>
-                <li><a href="cadastro.html"><ion-icon class="ion-icon" name="person-outline"></ion-icon>Cadastrar</a></li>
+                <li><a href="cadastro-doador.html"><ion-icon class="ion-icon" name="person-outline"></ion-icon>Cadastrar</a></li>
                 <li><a class="sair" href="index.html"><ion-icon class="ion-icon" name="log-out-outline"></ion-icon>Sair</a></li>
             </ul>
         </nav>
