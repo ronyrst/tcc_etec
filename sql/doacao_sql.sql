@@ -9,8 +9,8 @@ DATE salva o dia como YYYY-MM-DD
 =====================================================================
 */
 
-CREATE DATABASE DoacaoTCC;
-USE DoacaoTCC;
+CREATE DATABASE leve_sangue;
+USE leve_sangue;
 
 /*
 doador
