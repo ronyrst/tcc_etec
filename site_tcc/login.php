@@ -1,24 +1,61 @@
 <?php
 
+include("conexao.php");
+
 $login = $_POST['login'];
-$entrar = $_POST['entrar'];
-$senha = md5($_POST['senha']);
+$senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-$connect = mysql_connect('nome_do_servidor','nome_de_usuario','senha');
-$db = mysql_select_db('leve_sangue');
+if (isset($login) || isset($senha)) {
 
-if (isset($entrar)) {
+    // checa se o email tem tamanho zero
+    if(strlen($login) == 0){
+        echo "<script language='javascript' type='text/javascript'>
+        alert('Preencha seu email');window.location
+        .href='entrar.php';</script>;";
+    // checa se a senha tem tamanho zero
+    } else if(strlen($senha) == 0){
+        echo "<script language='javascript' type='text/javascript'>
+        alert('Preencha sua senha');window.location
+        .href='entrar.php';</script>;";
+    // segue em frente com o login
+    } else {
 
-    $verifica = mysql_query("SELECT * FROM usuarios WHERE login = 
-        '$login' AND senha = '$senha'") or die("erro ao selecionar");
-    if (mysql_num_rows($verifica)<=0){
-        echo"<script language='javascript' type='text/javascript'>
-        alert('Login e/ou senha incorretos');window.location
-        .href='login.html';</script>";
-        die();
-    }else{
-        setcookie("login",$login);
-        header("Location:index.php");
+        $real_login = $mysqli->real_escape_string($login);
+
+        $sql_code = "SELECT * FROM Centro_doacao WHERE email = '$real_login'";
+        $sql_query = $mysqli->query($sql_code);
+
+
+
+
+
+        // implementar
+
+
+
+
+        $quantidade = $sql_query->num_rows;
+        $usuario = $sql_query->fetch_assoc();
+
+        print(password_verify($real_senha, $usuario['senha']));
+
+        if( $quantidade == 1 && password_verify($real_senha, $usuario['senha']) == 1 ){
+            
+            if(!isset($_SESSION)){
+                session_start();
+            }
+
+            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['email'] = $usuario['email'];
+            $_SESSION['cnpj'] = $usuario['cnpj'];
+
+            header("Location: area_hospital.php");
+
+        } else {
+        // echo "<script language='javascript' type='text/javascript'>
+        // alert('Falha ao logar. Email ou senha incorretos.');window.location
+        // .href='entrar.php';</script>;";
+        }
     }
 }
 ?>

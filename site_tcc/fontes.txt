@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=3zUhy1BeWM4 - Como conectar PHP ao banco de dados MYSQL - ATUALIZADO 2022
+https://www.youtube.com/watch?v=MPHJVesOAYA
+
+https://www.devmedia.com.br/criando-um-sistema-de-cadastro-e-login-com-php-e-mysql/
+

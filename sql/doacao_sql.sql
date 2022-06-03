@@ -23,7 +23,7 @@ CREATE TABLE Doador (
     sobrenome VARCHAR(255) NOT NULL,
     data_nascimento DATE NOT NULL,
     tipo_sanguineo VARCHAR(3) NOT NULL,
-    cep CHAR(8) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
     estado CHAR(2) NOT NULL,
     telefone VARCHAR(15) NOT NULL,
     PRIMARY KEY (cpf)
@@ -41,11 +41,11 @@ centro_doação_cadastro
 cnpj, login, senha (protegido por hash), nome, cep (ou endereço completo?)
 */
 CREATE TABLE Centro_doacao (
-    cnpj CHAR(14),
+    cnpj CHAR(18),
     email VARCHAR(255) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL,
     nome VARCHAR(255) NOT NULL,
-    cep CHAR(8) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
     estado CHAR(2) NOT NULL,
     PRIMARY KEY (cnpj)
 );
@@ -56,7 +56,7 @@ cnpj, tipos sanguíneos que tem necessidade, data pedido
 */
 CREATE TABLE Centro_doacao_necessidade (
     pedido INT AUTO_INCREMENT,
-    cnpj CHAR(14),
+    cnpj CHAR(18),
     tipo_sanguineo VARCHAR(50) NOT NULL,
     data_pedido DATE NOT NULL,
     PRIMARY KEY (pedido),
@@ -77,7 +77,7 @@ cpf(doador), cnpj (centro de doação), data doação
 
 CREATE TABLE Historico_doacao (
     cpf CHAR(11),
-    cnpj CHAR(14),
+    cnpj CHAR(18),
     data_doacao DATE,
     CONSTRAINT PK_historico PRIMARY KEY (cpf, cnpj, data_doacao),
     FOREIGN KEY (cpf) REFERENCES Doador(cpf),
@@ -102,7 +102,7 @@ CREATE TABLE Pedido_mudanca_doador (
     nome VARCHAR(255) NOT NULL,
     sobrenome VARCHAR(255) NOT NULL,
     data_nascimento DATE NOT NULL,
-    cep CHAR(8) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
     estado CHAR(2) NOT NULL,
     telefone VARCHAR(15) NOT NULL,
     PRIMARY KEY (pedido),
@@ -111,9 +111,9 @@ CREATE TABLE Pedido_mudanca_doador (
 
 CREATE TABLE Pedido_mudanca_centro_doacao (
     pedido INT AUTO_INCREMENT,
-    cnpj CHAR(14),
+    cnpj CHAR(18),
     nome VARCHAR(255) NOT NULL,
-    cep CHAR(8) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
     estado CHAR(2) NOT NULL,
     PRIMARY KEY (pedido),
     FOREIGN KEY (cnpj) REFERENCES Centro_doacao(cnpj)

@@ -42,10 +42,15 @@
             <!-- senha -->
             <input type="password" placeholder="Senha" name="senha" id="senha" required>
             <i class="fas fa-lock iPassword"></i>
-            <div class="divCheck1">
+            
+            <!-- 
+            A função de lembrar senha não foi implementada. O navegador mesmo já tem essa função.
+            Mas fica um detalhe pra fazer mais pra frente.
+            -->
+            <!-- <div class="divCheck1">
                 <input type="checkbox">
                 <span>Lembrar a senha</span>
-            </div>
+            </div> -->
             <div class="entrarBtn">
                 <button type="submit" value="entrar" id="entrar" name="entrar">Entrar</button>
             </div>
@@ -57,27 +62,66 @@
         <!-- ############################################################# -->
         <!-- ############################################################# -->
         <!-- form de cadastro -->
-        <form id="signup">
+        <form id="signup" method="POST" action="cadastro.php">
             <!-- nome -->
-            <input type="text" placeholder="Nome" required>
+            <input type="text" placeholder="Nome" name="nome" id="nome" required>
             <i class="fas fa-solid fa-user iUser"></i>
             <!-- email -->
-            <input type="text" placeholder="Email" required>
+            <input type="text" placeholder="Email" name="email" id="email" required>
             <i class="fas fa-envelope iEmail"></i>
             <!-- senha -->
-            <input type="password" placeholder="Senha" required>
+            <input type="password" placeholder="Senha"  name="senha" id="senha" required>
             <i class="fas fa-lock iPassword2"></i>
             <!-- cnpj -->
-            <input type="text" placeholder="CNPJ" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" required>
+            <input type="text" placeholder="CNPJ"  name="cnpj" id="cnpj" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" required>
             <i class="fas fa-solid fa-id-card iCNPJ"></i>
             <!-- cep -->
-            <input type="text" placeholder="CEP" required>
+            <input type="text" placeholder="CEP"  name="cep" id="cep" required>
             <i class="fas fa-solid fa-location-arrow iCEP"></i>
-            <div class="divCheck">
+            <!-- Estado -->
+            <!-- ######################## -->
+            <!-- ######################## -->
+            <!-- Isso aqui tá gambiarrado -->
+            <!-- ######################## -->
+            <!-- ######################## -->
+            <br><br><br>
+            <select id="estado" name="estado" form="signup" required>
+                <option value="==">Selecione o Estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            <!-- A parte de aceitar os termos de uso não será usada atualmente -->
+            <!-- <div class="divCheck">
                 <input type="checkbox" required>
                 <span>Termos</span>
-            </div>
-            <button type="submit">Registrar</button>
+            </div> -->
+            <button type="submit" value="Registrar" id="registrar" name="registrar">Registrar</button>
         </form>
         </div>
    
