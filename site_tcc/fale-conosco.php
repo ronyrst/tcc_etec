@@ -34,31 +34,36 @@ include("protecao.php");
     </div>
 
     <div class="caixa">
-            <h2>Contato</h2>
-            <div class="form2">
-            <form action="container contato.php" id="fale_conosco" method="POST">
-                <div class="input-field">
-                    <input type="text" name="name" id="nome" placeholder="Nome">
-                <div class="underline"></div>
-                </div>
-                <div class="input-field">
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                <div class="underline"></div>
-                </div>
-                <div class="input-field">
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
-                <div class="tel"></div>
-                </div>
-                <div class="input-field">
-                    <input type="text" name="assunto" id="assunto" placeholder="Assunto">
-                <div class="underline"></div>
-                </div>
-                <div class="input-field">
-                    <input type="text" name="mensagem" id="mensagem" placeholder="Sua mensagem">
-                <div class="underline"></div>
-                </div>
-                <li><input class="botao1" type="submit" value="Enviar">
-            </form>
+        <h2>Contato</h2>
+        <div class="form2">
+        <form id="fale_conosco" method="POST" action="contato.php">
+            <!-- O backend já tem o nome, email e cnpj da empresa pelos dados de sessão do usuário.
+                Então essas caixas de nome e email não são necessárias. -->
+
+            <!-- <div class="input-field">
+                <input type="text" name="name" id="nome" placeholder="Nome">
+            <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+            <div class="underline"></div>
+            </div> -->
+            <br><br>
+            <div class="input-field">
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+            <div class="tel"></div>
+            </div>
+            <div class="input-field">
+                <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+            <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <textarea name="mensagem" id="mensagem" maxlength="2000" placeholder="Sua mensagem" required></textarea>
+            <div class="underline"></div>
+            <br>
+            </div>
+            <li><button class="botao1" type="submit" id="enviar" name="enviar" value="Enviar">Enviar</button>
+        </form>
         </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

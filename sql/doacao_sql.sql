@@ -120,6 +120,17 @@ CREATE TABLE Pedido_mudanca_centro_doacao (
 );
 
 /*
- Implementar tabela de mensagem enviada no fale_conosco
+  tabela de mensagem enviada no fale_conosco
     Nome, número, email e mensagem
 */
+CREATE TABLE Mensagem_fale_conosco (
+    numero_mensagem INT AUTO_INCREMENT,
+    cnpj CHAR(18),
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    assunto VARCHAR(255) NOT NULL,
+    mensagem VARCHAR(2000) NOT NULL,
+    PRIMARY KEY (numero_mensagem),
+    FOREIGN KEY (cnpj) REFERENCES Centro_doacao(cnpj)
+);
