@@ -17,7 +17,7 @@ doador
 cpf, nome, idade, tipo sanguineo, numero telefone, data ultima doação
 */
 CREATE TABLE Doador (
-    cpf CHAR(11),
+    cpf CHAR(14),
     /* senha VARCHAR(255) NOT NULL, POR ENQUANTO NÃO SERÁ USADO */
     nome VARCHAR(255) NOT NULL,
     sobrenome VARCHAR(255) NOT NULL,
@@ -76,7 +76,7 @@ cpf(doador), cnpj (centro de doação), data doação
 */
 
 CREATE TABLE Historico_doacao (
-    cpf CHAR(11),
+    cpf CHAR(14),
     cnpj CHAR(18),
     data_doacao DATE,
     CONSTRAINT PK_historico PRIMARY KEY (cpf, cnpj, data_doacao),
@@ -98,7 +98,7 @@ Pedido de cliente para trocar os dados
 
 CREATE TABLE Pedido_mudanca_doador (
     pedido INT AUTO_INCREMENT,
-    cpf CHAR(11),
+    cpf CHAR(14),
     nome VARCHAR(255) NOT NULL,
     sobrenome VARCHAR(255) NOT NULL,
     data_nascimento DATE NOT NULL,
