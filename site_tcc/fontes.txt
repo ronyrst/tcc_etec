@@ -3,3 +3,15 @@ https://www.youtube.com/watch?v=MPHJVesOAYA
 
 https://www.devmedia.com.br/criando-um-sistema-de-cadastro-e-login-com-php-e-mysql/
 
+
+O ideal seria produzir essas coisas:
+●	BANCO DE DADOS
+o	Normalização Estruturada (1ª, 2ª e 3ª FN)
+o	MER/DER
+●	ANALISE DE SISTEMAS ORIENTADA A OBJETOS
+o	Relatório de Requisitos
+o	UML
+▪	Diagrama de Casos de Uso
+▪	Documentação de Casos de Uso
+▪	Diagrama de Classes
+▪	Diagrama de Atividade

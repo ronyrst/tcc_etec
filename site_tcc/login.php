@@ -2,8 +2,12 @@
 
 include("conexao.php");
 
+if(!isset($_SESSION)){
+    session_start();
+}
+
 $login = $_POST['login'];
-$senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+$senha = $_POST['senha'];
 
 if (isset($login) || isset($senha)) {
 
@@ -25,37 +29,29 @@ if (isset($login) || isset($senha)) {
         $sql_code = "SELECT * FROM Centro_doacao WHERE email = '$real_login'";
         $sql_query = $mysqli->query($sql_code);
 
-
-
-
-
-        // implementar
-
-
-
-
         $quantidade = $sql_query->num_rows;
         $usuario = $sql_query->fetch_assoc();
 
-        print(password_verify($real_senha, $usuario['senha']));
-
-        if( $quantidade == 1 && password_verify($real_senha, $usuario['senha']) == 1 ){
-            
-            if(!isset($_SESSION)){
-                session_start();
-            }
+        if( $quantidade == 1 && password_verify($senha, $usuario['senha']) ){
 
             $_SESSION['nome'] = $usuario['nome'];
             $_SESSION['email'] = $usuario['email'];
             $_SESSION['cnpj'] = $usuario['cnpj'];
 
-            header("Location: area_hospital.php");
+            header("Location: area-hospital.php");
 
         } else {
-        // echo "<script language='javascript' type='text/javascript'>
-        // alert('Falha ao logar. Email ou senha incorretos.');window.location
-        // .href='entrar.php';</script>;";
+        echo "<script language='javascript' type='text/javascript'>
+        alert('Falha ao logar. Email ou senha incorretos.');window.location
+        .href='entrar.php';</script>;";
         }
+    }
+} else {
+    if ( isset($_SESSION['nome']) ) {
+        header("Location: area-hospital.php");
+    } else {
+        header("Location: entrar.php");
+        exit();              
     }
 }
 ?>

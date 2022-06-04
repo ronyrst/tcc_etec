@@ -1,3 +1,10 @@
+<?php
+
+include("protecao.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +13,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_js/cadastro.css">
   
-    <title>Document</title>
+    <title>Cadastro de doador - Leve Sangue</title>
 </head>
 <body>
     <div class="menuvertical">
         <div class="logo">
-            <img src="images\logo2.png" class="img">
+            <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
         </div> 
         <nav>
             <ul>
-                <li><a href="fale_conosco.html"><ion-icon class="ion-icon" name="chatbubble-ellipses-outline"></ion-icon>Contate-nos</a></li>
-                <li><a href="notificar.html"><ion-icon class="ion-icon" name="notifications-outline"></ion-icon>Notificar</a></li>
-                <li><a href="cadastro-doador.html"><ion-icon class="ion-icon" name="person-outline"></ion-icon>Cadastrar</a></li>
-                <li><a class="sair" href="index.html"><ion-icon class="ion-icon" name="log-out-outline"></ion-icon>Sair</a></li>
+                <li><a href="fale-conosco.php"><ion-icon class="ion-icon" name="chatbubble-ellipses-outline"></ion-icon>Contate-nos</a></li>
+                <li><a href="notificar.php"><ion-icon class="ion-icon" name="notifications-outline"></ion-icon>Notificar</a></li>
+                <li><a href="cadastro-doador.php"><ion-icon class="ion-icon" name="person-outline"></ion-icon>Cadastrar</a></li>
+                <li><a class="sair" href="logout.php"><ion-icon class="ion-icon" name="log-out-outline"></ion-icon>Sair</a></li>
             </ul>
         </nav>
     </div>

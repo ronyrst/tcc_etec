@@ -1,3 +1,9 @@
+<?php
+include("protecao.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,23 +12,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_js/contato.css">
   
-    <title>Document</title>
+    <title>Fale Conosco - Leve Sangue</title>
 
 </head>
 <body>
     <div class="banner1">
-        <img src="images\fundoEscuro.png" class="img2">
+        <img src="images\fundoEscuro.png" alt="Fundo doação é amor" class="img2">
     </div>
     <div class="menuvertical">
         <div class="logo">
-            <img src="images\logo2.png" class="img">
+            <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
         </div> 
         <nav>
             <ul>
-                <li><a href="fale_conosco.html"><ion-icon class="ion-icon" name="chatbubble-ellipses-outline"></ion-icon>Contate-nos</a></li>
-                <li><a href="notificar.html"><ion-icon class="ion-icon" name="notifications-outline"></ion-icon>Notificar</a></li>
-                <li><a href="cadastro-doador.html"><ion-icon class="ion-icon" name="person-outline"></ion-icon>Cadastrar</a></li>
-                <li><a class="sair" href="index.html"><ion-icon class="ion-icon" name="log-out-outline"></ion-icon>Sair</a></li>
+                <li><a href="fale-conosco.php"><ion-icon class="ion-icon" name="chatbubble-ellipses-outline"></ion-icon>Contate-nos</a></li>
+                <li><a href="notificar.php"><ion-icon class="ion-icon" name="notifications-outline"></ion-icon>Notificar</a></li>
+                <li><a href="cadastro-doador.php"><ion-icon class="ion-icon" name="person-outline"></ion-icon>Cadastrar</a></li>
+                <li><a class="sair" href="logout.php"><ion-icon class="ion-icon" name="log-out-outline"></ion-icon>Sair</a></li>
             </ul>
         </nav>
     </div>
@@ -30,7 +36,7 @@
     <div class="caixa">
             <h2>Contato</h2>
             <div class="form2">
-            <form action="container">
+            <form action="container contato.php" id="fale_conosco" method="POST">
                 <div class="input-field">
                     <input type="text" name="name" id="nome" placeholder="Nome">
                 <div class="underline"></div>
