@@ -16,20 +16,16 @@ include("protecao.php");
     <title>Área do Centro de Doação - Leve Sangue</title>
 </head>
 <body>
-<div class="isso">
-    <div class="caixa">
-        <!-- Tentar fazer isso funcionar? Precisa colocar a caixa no centro da tela lá. -->
-        <?php echo "Olá, " . $_SESSION['nome']; ?>
-    </div>
-</div>
 <div class="banner1">
         <img src="images\fundoEscuro.png" alt="Fundo doação é amor" class="img2">
     </div>
 
 <div class="menuvertical">
         <div class="logo">
-            <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
+            <a href="index.php"><img src="images\logo2.png" alt="Logo Leve Sangue" class="img"></a>
         </div> 
+        <br>
+        <p style="text-align:center; font-size: 20px; color: #fff;"><?php echo "Olá, ".$_SESSION['nome'].".";?></p>
         <nav>
             <ul>
                 <li><a href="fale-conosco.php"><ion-icon class="ion-icon" name="chatbubble-ellipses-outline"></ion-icon>Contate-nos</a></li>

@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,11 +21,19 @@
     <div class="fixado">
 <div class="menuhorizontal">
     <div class="logo">
-        <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
+        <a href="index.php"><img src="images\logo2.png" alt="Logo Leve Sangue" class="img"></a>
     </div> 
     <ul>
         <li><a href="index.php">Início</a></li>
-        <li><a href="entrar.php">Entrar / Registrar</a></li>
+        <li>
+            <?php
+                if(isset($_SESSION['nome'])){
+                    echo '<a href="area-hospital.php">Área de '.$_SESSION['nome'] .'</a>';
+                } else {
+                    echo '<a href="entrar.php">Entrar / Registrar</a>';
+                }
+            ?>
+        </li>
     </ul>
     </div>
 </div>

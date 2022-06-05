@@ -18,9 +18,11 @@ include("protecao.php");
 <body>
     <div class="menuvertical">
         <div class="logo">
-            <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
+            <a href="index.php"><img src="images\logo2.png" alt="Logo Leve Sangue" class="img"></a>
         </div> 
         <nav>
+            <br>
+            <p style="text-align:center; font-size: 20px; color: #fff;"><?php echo "Olá, ".$_SESSION['nome'].".";?></p>
             <ul>
                 <li><a href="fale-conosco.php"><ion-icon class="ion-icon" name="chatbubble-ellipses-outline"></ion-icon>Contate-nos</a></li>
                 <li><a href="notificar.php"><ion-icon class="ion-icon" name="notifications-outline"></ion-icon>Notificar</a></li>
@@ -33,26 +35,26 @@ include("protecao.php");
             <h2>Cadastrar Paciente</h2>
             <div class="form2">
 
-            <form action="container">
+            <form action="cadastro-doador-conclusao.php" id="cadastro-doador" method="POST">
                 <div class="input-field">
-                    <input type="text" name="name" id="nome" placeholder="Nome">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
                 <div class="underline"></div>
                 </div>
                 <div class="input-field">
-                    <input type="text" name="sobre" id="sobrenome" placeholder="Sobrenome">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
                 <div class="underline"></div>
                 </div>
                 <div class="input-field">
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
                 <div class="tel"></div>
                 </div>
                 <div class="input-field">
-                    <input id="cpf" type="text" placeholder="Insira o CPF (somente números)" onblur="formataCPF(this)" pattern="[0-9]{11}">
+                    <input id="cpf" name="cpf" type="text" placeholder="CPF" onblur="formataCPF(this)" required>
                 <div class="underline"></div>
                 </div>
                 <div class="input-field">
-                    <select name="sangue">  
-                      <option>Tipo sanguíneo</option>
+                    <select name="sangue" required>  
+                        <option value="==">Tipo sanguíneo</option>
                         <option value="A+">A+</option>
                         <option value="A-">A-</option>
                         <option value="B+">B+</option>
@@ -65,48 +67,44 @@ include("protecao.php");
                 <div class="underline"></div>
                 </div>
                 <div class="input-field">
-                    <select name="estado" >
-                        <option value="ac">Estado</option> 
-                        <option value="ac">Acre</option> 
-                        <option value="al">Alagoas</option> 
-                        <option value="am">Amazonas</option> 
-                        <option value="ap">Amapá</option> 
-                        <option value="ba">Bahia</option> 
-                        <option value="ce">Ceará</option> 
-                        <option value="df">Distrito Federal</option> 
-                        <option value="es">Espírito Santo</option> 
-                        <option value="go">Goiás</option> 
-                        <option value="ma">Maranhão</option> 
-                        <option value="mt">Mato Grosso</option> 
-                        <option value="ms">Mato Grosso do Sul</option> 
-                        <option value="mg">Minas Gerais</option> 
-                        <option value="pa">Pará</option> 
-                        <option value="pb">Paraíba</option> 
-                        <option value="pr">Paraná</option> 
-                        <option value="pe">Pernambuco</option> 
-                        <option value="pi">Piauí</option> 
-                        <option value="rj">Rio de Janeiro</option> 
-                        <option value="rn">Rio Grande do Norte</option> 
-                        <option value="ro">Rondônia</option> 
-                        <option value="rs">Rio Grande do Sul</option> 
-                        <option value="rr">Roraima</option> 
-                        <option value="sc">Santa Catarina</option> 
-                        <option value="se">Sergipe</option> 
-                        <option value="sp">São Paulo</option> 
-                        <option value="to">Tocantins</option> 
+                    <select name="estado" required>
+                        <option value="==">Estado</option> 
+                        <option value="AC">Acre</option> 
+                        <option value="AL">Alagoas</option> 
+                        <option value="AM">Amazonas</option> 
+                        <option value="AP">Amapá</option> 
+                        <option value="BA">Bahia</option> 
+                        <option value="CE">Ceará</option> 
+                        <option value="DF">Distrito Federal</option> 
+                        <option value="ES">Espírito Santo</option> 
+                        <option value="GO">Goiás</option> 
+                        <option value="MA">Maranhão</option> 
+                        <option value="MT">Mato Grosso</option> 
+                        <option value="MS">Mato Grosso do Sul</option> 
+                        <option value="MG">Minas Gerais</option> 
+                        <option value="PA">Pará</option> 
+                        <option value="PB">Paraíba</option> 
+                        <option value="PR">Paraná</option> 
+                        <option value="PE">Pernambuco</option> 
+                        <option value="PI">Piauí</option> 
+                        <option value="RJ">Rio de Janeiro</option> 
+                        <option value="RN">Rio Grande do Norte</option> 
+                        <option value="RO">Rondônia</option> 
+                        <option value="RS">Rio Grande do Sul</option> 
+                        <option value="RR">Roraima</option> 
+                        <option value="SC">Santa Catarina</option> 
+                        <option value="SE">Sergipe</option> 
+                        <option value="SP">São Paulo</option> 
+                        <option value="TO">Tocantins</option> 
                     </select>
                 <div class="underline"></div>
                 </div>
                 <div class="input-field">
-                    <input id="date" type="date">
+                    <input id="date" type="date" name="data_aniversario" required>
                 <div class="underline"></div>
                 </div>
                 <div class="input-field">
-                    <input type="text" name="iCEP" id="CEP" placeholder="CEP">
-                <div class="underline"></div>
-                </div>
-                <div class="input-field">
-                    <input type="text" name="numerocs" id="numeroc" placeholder="Número">
+                    <input type="text" name="iCEP" id="CEP" placeholder="CEP" required>
                 <div class="underline"></div>
                 </div>
                 <input class="botao1" type="submit" value="Enviar">

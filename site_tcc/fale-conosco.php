@@ -21,9 +21,11 @@ include("protecao.php");
     </div>
     <div class="menuvertical">
         <div class="logo">
-            <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
+            <a href="index.php"><img src="images\logo2.png" alt="Logo Leve Sangue" class="img"></a>
         </div> 
         <nav>
+            <br>
+            <p style="text-align:center; font-size: 20px; color: #fff;"><?php echo "Olá, ".$_SESSION['nome'].".";?></p>
             <ul>
                 <li><a href="fale-conosco.php"><ion-icon class="ion-icon" name="chatbubble-ellipses-outline"></ion-icon>Contate-nos</a></li>
                 <li><a href="notificar.php"><ion-icon class="ion-icon" name="notifications-outline"></ion-icon>Notificar</a></li>

@@ -3,7 +3,11 @@
 $hostname = "localhost";
 $bancodedados = "leve_sangue";
 $usuario = "root";
-$senha = "usbw";
+// usando o usbWebServer, a senha é essa:
+// $senha = "usbw";
+// usando o xampp, a senha é essa:
+$senha = "";
+
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
 if($mysqli->connect_errno){

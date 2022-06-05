@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION['nome'])){
+    header("Location: area-hospital.php");
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,11 +25,19 @@
     <div class="fixado">
 <div class="menuhorizontal">
     <div class="logo">
-        <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
+        <a href="index.php"><img src="images\logo2.png" alt="Logo Leve Sangue" class="img"></a>
     </div> 
     <ul>
         <li><a href="index.php">Início</a></li>
-        <li><a href="entrar.php">Entrar / Registrar</a></li>
+        <li>
+            <?php
+                if(isset($_SESSION['nome'])){
+                    echo '<a href="area-hospital.php">Área de '.$_SESSION['nome'] .'</a>';
+                } else {
+                    echo '<a href="entrar.php">Entrar / Registrar</a>';
+                }
+            ?>
+        </li>
 
     </ul>
 </div>
@@ -76,7 +95,6 @@
             <i class="fas fa-solid fa-location-arrow iCEP"></i>
             <!-- Estado -->
             <br><br><br>
-            <div class="input-field">
             <select id="estado" name="estado" form="signup" required>
                 <option value="==">Selecione o Estado</option>
                 <option value="AC">Acre</option>
@@ -107,7 +125,6 @@
                 <option value="SE">Sergipe</option>
                 <option value="TO">Tocantins</option>
             </select>
-</div>
 
             <!-- A parte de aceitar os termos de uso não será usada atualmente -->
             <!-- <div class="divCheck">
@@ -127,7 +144,7 @@
             <!-- #######################  T O   D O  ######################### -->
             <!-- ############################################################# -->
             <!-- ############################################################# -->
-            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
             <li><a href="mailto:bot.tcc.sangue@gmail.com">Email para orçamento</a></li>
         </ul>
     </div>
