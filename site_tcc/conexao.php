@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $bancodedados = "leve_sangue";
 $usuario = "root";
-$senha = "";
+$senha = "usbw";
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
 if($mysqli->connect_errno){

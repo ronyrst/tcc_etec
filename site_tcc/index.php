@@ -23,13 +23,13 @@
 </div>
 
     <div class="banner1">
-        <img src="images\texto1.png" alt="Doar sangue é mais do que ajudar uma pessoa, é dar uma nova chance a quem precisa viver, lembre-se que amanhã quem pode precisar de sangue é você." class="img2">
+        <img src="images\texte4.png" alt="Doar sangue é mais do que ajudar uma pessoa, é dar uma nova chance a quem precisa viver, lembre-se que amanhã quem pode precisar de sangue é você." class="img2">
     </div>
     <div class="banner2">
-        <img src="images\texto2.png" alt="O amor não se obtém quando você o recebe. Ele é obtido quando você o dá." class="img2">
+        <img src="images\texto6.png" alt="O amor não se obtém quando você o recebe. Ele é obtido quando você o dá." class="img2">
     </div>
     <div class="banner3">
-        <img src="images\texto3.png" alt="O amor cresce com a doação. O amor que damos é o único que mantemos, a única maneira de obter amor é oferecê-lo aos outros." class="img2">
+        <img src="images\texto5.png" alt="O amor cresce com a doação. O amor que damos é o único que mantemos, a única maneira de obter amor é oferecê-lo aos outros." class="img2">
     </div> 
     <div class="conteudo">
     <h1>

@@ -16,11 +16,17 @@ include("protecao.php");
     <title>Área do Centro de Doação - Leve Sangue</title>
 </head>
 <body>
-    <div class="banner1">
+<div class="isso">
+    <div class="caixa">
+        <!-- Tentar fazer isso funcionar? Precisa colocar a caixa no centro da tela lá. -->
+        <?php echo "Olá, " . $_SESSION['nome']; ?>
+    </div>
+</div>
+<div class="banner1">
         <img src="images\fundoEscuro.png" alt="Fundo doação é amor" class="img2">
     </div>
 
-    <div class="menuvertical">
+<div class="menuvertical">
         <div class="logo">
             <img src="images\logo2.png" alt="Logo Leve Sangue" class="img">
         </div> 
@@ -34,10 +40,7 @@ include("protecao.php");
         </nav>
     </div>
 
-    <div class="caixa">
-        <!-- Tentar fazer isso funcionar? Precisa colocar a caixa no centro da tela lá. -->
-        <?php echo "Olá, " . $_SESSION['nome']; ?>
-    </div>
+
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

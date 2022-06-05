@@ -76,6 +76,7 @@
             <i class="fas fa-solid fa-location-arrow iCEP"></i>
             <!-- Estado -->
             <br><br><br>
+            <div class="input-field">
             <select id="estado" name="estado" form="signup" required>
                 <option value="==">Selecione o Estado</option>
                 <option value="AC">Acre</option>
@@ -106,6 +107,7 @@
                 <option value="SE">Sergipe</option>
                 <option value="TO">Tocantins</option>
             </select>
+</div>
 
             <!-- A parte de aceitar os termos de uso não será usada atualmente -->
             <!-- <div class="divCheck">
@@ -125,7 +127,7 @@
             <!-- #######################  T O   D O  ######################### -->
             <!-- ############################################################# -->
             <!-- ############################################################# -->
-            <li><a href="#"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
+            <li><a href="#">WhatsApp</a></li>
             <li><a href="mailto:bot.tcc.sangue@gmail.com">Email para orçamento</a></li>
         </ul>
     </div>

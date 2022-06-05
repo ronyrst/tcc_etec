@@ -79,7 +79,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         padding: 6px;
         width: 35%;
         left: 36%;
-        height: 530px;
+        height: 590px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -87,11 +87,22 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 10px;
         box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
     }
+    .input-field select {
+        position: relative;
+        outline: none;
+        top: 15px;
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 5px;
+        border-color: #DCDCDC;
+        border-radius: 15px;
+        
+    }
 form {
         position: absolute;
         margin-top: 50px;
         transition: .5s;
-        width: 300px;
+        width: 365px;
         height: 400px;
     }
 .buttonsForm {
@@ -188,7 +199,7 @@ i {
 }
 .rodape {
     position: relative;
-    top: 700px;
+    top: 750px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);

@@ -97,6 +97,7 @@ bottom: 85.7%;
 #mensagem {
     text-align: center;
     height: 150px;
+    width: 250px;
 }
 .botao1 {
     position: relative;
@@ -114,7 +115,6 @@ bottom: 85.7%;
 .caixa li{
     display: inline;
     margin: 8%;
-    padding:rem;
     position: relative;
     top: -90px;
 }
