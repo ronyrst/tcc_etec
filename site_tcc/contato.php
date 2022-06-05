@@ -1,7 +1,7 @@
 <?php
 
-import("conexao.php");
-import("protecao.php");
+include("conexao.php");
+include("protecao.php");
 
 $nome = $_SESSION['nome'];
 $email = $_SESSION['email'];

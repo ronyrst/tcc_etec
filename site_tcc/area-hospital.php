@@ -2,8 +2,6 @@
 
 include("protecao.php");
 
-
-
 ?>
 
 

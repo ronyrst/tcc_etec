@@ -1,8 +1,6 @@
 <?php
 
-if(!isset($_SESSION)){
-    session_start();
-}
+session_start();
 
 if(!isset($_SESSION['nome'])){
     echo "<script language='javascript' type='text/javascript'>

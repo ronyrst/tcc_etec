@@ -58,7 +58,7 @@
 
 
         <!-- form de cadastro -->
-        <form id="signup" method="POST" action="cadastro.php">
+        <form id="signup" method="POST" action="cadastro-centro.php">
             <!-- nome -->
             <input type="text" placeholder="Nome" name="nome" id="nome" required>
             <i class="fas fa-solid fa-user iUser"></i>
@@ -75,11 +75,6 @@
             <input type="text" placeholder="CEP"  name="cep" id="cep" required>
             <i class="fas fa-solid fa-location-arrow iCEP"></i>
             <!-- Estado -->
-            <!-- ######################## -->
-            <!-- ######################## -->
-            <!-- Isso aqui tá gambiarrado -->
-            <!-- ######################## -->
-            <!-- ######################## -->
             <br><br><br>
             <select id="estado" name="estado" form="signup" required>
                 <option value="==">Selecione o Estado</option>

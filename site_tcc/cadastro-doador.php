@@ -32,6 +32,7 @@ include("protecao.php");
     <div class="caixa">
             <h2>Cadastrar Paciente</h2>
             <div class="form2">
+
             <form action="container">
                 <div class="input-field">
                     <input type="text" name="name" id="nome" placeholder="Nome">
@@ -110,6 +111,7 @@ include("protecao.php");
                 </div>
                 <input class="botao1" type="submit" value="Enviar">
             </form>
+
         </div>
     </div>
     <script src="css_js/testefc.js"></script>
