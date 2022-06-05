@@ -7,6 +7,7 @@
 5. Vai para a pasta que o Xampp usa e joga os arquivos do site lá. No meu computador está dentro de htdocs/leve_sangue/ (o Laragon deve funcionar de forma parecida, com uma pasta específica que o localhost usa para renderizar)
 6. Em seguida é só abrir o navegador e digitar localhost/leve_sangue/index.php
 7. Pode navegar à vontade pelo site (algumas funções de depois do login não estão funcionais ainda).
+8. O login de teste é <b>teste@teste.com</b> e a senha é <b>teste</b>.
 
 
 ## Links úteis
