@@ -4,9 +4,9 @@ $hostname = "localhost";
 $bancodedados = "leve_sangue";
 $usuario = "root";
 // usando o usbWebServer, a senha é essa:
-// $senha = "usbw";
+ $senha = "usbw";
 // usando o xampp, a senha é essa:
-$senha = "";
+// $senha = "";
 
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
