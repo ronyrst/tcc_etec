@@ -53,6 +53,14 @@ include("protecao.php");
                 <div class="underline"></div>
                 </div>
                 <div class="input-field">
+                    <select name="sexo" required>  
+                        <option value="==">Sexo</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                <div class="underline"></div>
+                </div>
+                <div class="input-field">
                     <select name="sangue" required>  
                         <option value="==">Tipo sanguíneo</option>
                         <option value="A+">A+</option>

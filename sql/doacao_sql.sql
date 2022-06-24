@@ -21,6 +21,7 @@ CREATE TABLE Doador (
     /* senha VARCHAR(255) NOT NULL, POR ENQUANTO NÃO SERÁ USADO */
     nome VARCHAR(255) NOT NULL,
     sobrenome VARCHAR(255) NOT NULL,
+    sexo CHAR(1) NOT NULL,
     data_nascimento DATE NOT NULL,
     tipo_sanguineo VARCHAR(3) NOT NULL,
     cep VARCHAR(10) NOT NULL,

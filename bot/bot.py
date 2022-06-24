@@ -35,7 +35,12 @@ class whatsappBot:
         #    </svg>
         #</span>
 
+# Olá Jubiscreuda, nós do banco de sangue Hemocentro HSP Unifesp, estamos em deficiência do tipo sanguíneo B+, e localizamos em nosso banco de dados que a senhora possui este mesmo sangue, e sua ultima doação foi em 21/09/2019, sendo apta para realizar uma doação este mês, solicitamos por gentileza a sua colaboração para salvar as vidas que necessitam desta sua doação.
 
+# Informações para doar:
+# - Consuma alimentos leves, não é possível doar em jejum
+# - Evitar alimentos gordurosos no dia da doação 
+# - Hidrate-se
 
 #https://www.youtube.com/watch?v=ISYHWfWvp3E
 #12:14
